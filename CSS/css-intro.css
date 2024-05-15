@@ -1,0 +1,56 @@
+/*  Universal Selector */
+* {
+  color: blueviolet;
+}
+
+/* Element Selector */
+h1 {
+  color: pink;
+}
+
+/* Class Selector */
+.parag1 {
+  color: red;
+}
+
+/* ID Selector */
+#parag2 {
+  color: aquamarine;
+}
+
+/* Attribute Selector */
+[href] {
+  color: yellowgreen;
+}
+
+/* element[attribute] selector */
+a[href] {
+  color: orange;
+}
+
+/* Group selector */
+h2, h3 {
+  font-size: 20px;
+  background-color: blanchedalmond;
+}
+
+h2, #h3 {
+  font-size: 20px;
+  background-color: brown;
+}
+
+/* Pseudo classes */
+#h3:hover {
+  background-color: skyblue;
+  color: black;
+}
+
+/* Earlier rule */
+h5 {
+  color: green;
+}
+
+/* later rule */
+h5 {
+  color: sandybrown;
+}
