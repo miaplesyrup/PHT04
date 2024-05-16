@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: whitesmoke;
+    min-width: 300px;
+    height: 100%;
+}
+a { 
+    position:relative;
+    text-decoration: none;
+    color: dimgrey ;
+    padding: auto;
+}
+nav > a {
+    margin: 20px;
+}
+a::after{
+    content:"";
+    position: absolute;
+    /* background-color: chocolate; */
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+a:hover:after {
+    width: 80px;
+}
+.grid-container {
+    display: grid;
+    width: 100%;
+    min-width: 300px;
+    margin-bottom: 30px;
+    grid-template: 5rem /1fr 1fr 1fr;
+    height: 5vh;
+    gap: 0;
+    grid-template-areas:
+    "header header header"
+    "navbar navbar navbar"
+}
+.grid-item {
+    background-color: navajowhite;
+    color:dimgrey;
+    font-weight: bold;
+}
+.header{
+    grid-column: span 3;
+    grid-area: header;
+    background-color: whitesmoke;
+    border: none;
+    font-size: 2.5rem;
+    font-style: oblique;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:chocolate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navBar{
+    grid-column: span 3;
+    grid-area: navbar;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    font-size:medium;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: whitesmoke;
+    border: .5px dashed dimgrey;
+    height: fit-content;
+    width: 100%;
+    min-width: 300px;
+}
+.aboutMe >h2 {
+    position: relative;
+    top: 15vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    color: dimgrey;
+    font-size: 1.5em;
+}
+.sunset > h2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-bottom: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    color: dimgrey;
+    font-size: 1.5em;
+}
+.formsection >h2 {
+    margin-top: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    color: dimgrey;
+    font-size: 1.5em;
+}
+.formsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom:0;
+    margin-top: 5vh;
+    width: 100%;
+    min-width: 300px;
+    background-color: whitesmoke;
+}
+.contactMe {
+    margin-top: 30px;
+    border-radius: 20px;
+    background-color: burlywood;
+    width: 350px;
+    min-width: 250px;
+    height: fit-content;
+    padding: 50px 50px;
+    border: 5px solid #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.cv {
+    color:black;
+    font-weight: bold;
+}
+.about-me {
+    display:flex;
+    position: relative;
+    top: 5vh;
+    background-color: whitesmoke;
+    padding: 3vh 5vw;
+    gap: 1vw;
+}
+.techStack1 {
+    padding: 2vh 2vw;
+    height: fit-content;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width:fit-content;
+}
+.sunflower{
+    background-color:chocolate;
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+.connect > h2 {
+    margin-top: 60px;
+    margin-bottom: 50px;
+    text-decoration: overline;
+}
+.email {
+    font-weight: bold;
+    color:dimgrey;
+    border-radius: 10px;
+    padding: 5px;
+    display: inline-block;
+    margin-top: 5px;
+}
+.techStack1 >icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.techStack2 > icons {
+    margin-left: 10px;
+    width: 200px;
+}
+.linkedIn, .reddit, .git {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    width: 100%;
+    min-width: 100px;
+
+}
+.linkedin, .reddit-img, .gitlab {
+    width:40px;
+    height: 100%;
+}
+
+.paragraphs-about {
+    height:auto;
+    font-size: 1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    text-align:left;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+.paragraphs-blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    padding: 5vh 10vw;
+    width: 100%;
+    min-width: 300px;
+    margin-bottom: 10px;
+}
+.paragraphs-about > p, .paragraphs-blog >p {
+    margin-bottom: 15px;
+}
+#zambalesIMG {
+    height:auto;
+    width: auto;
+    min-width: 300px;
+    max-width: 1500px;
+    display: flex;
+}
+.sunset {
+    display:flex;
+    position:sticky;
+    top:15vh;
+    flex-direction: column;
+    padding-top: 0.5em;
+    margin-bottom: 30px;
+    height: 100%;
+    padding-bottom: 5vh;
+}
+.blogbody{
+    height: auto;
+    width: 100%;
+    min-width: 300px;
+    display:flex;
+    justify-content: center;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+.techStack2 > p{
+    color: dimgrey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+form > button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    width: 100px;
+    height: 30px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 10px;
+}
+form > button:hover {
+    background-color: #f5f5f5;
+    color: chocolate;
+    cursor: pointer;
+}
+input {
+    width: 200px;
+    height: 30px;
+    border: 2px solid #ffffff;
+}
+textarea {
+    height: 200px;
+    width: 200px;
+    border: 2px solid #ffffff;
+    margin-bottom: 10px;
+}
+.connect {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    color: dimgrey;
+}
+
+.techsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    background-color: whitesmoke;
+    padding-bottom: 30px;
+}
+.contactFooter {
+    height: 50px;
+    margin-bottom: 0;
+    border: .5px dashed dimgrey;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    background-color:whitesmoke;
+    color: dimgrey; 
+    padding-top:5px;
+    padding-bottom: 10px;
+} 
+.aboutFooter {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100px;
+    margin-bottom: 0;
+    padding-top: 30px;
+    border: .5px dashed dimgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:whitesmoke;
+    color: dimgrey; 
+} 
+.blogFooter {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 0;
+    border: .5px dashed dimgrey;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    padding-top:5px;
+    padding-bottom: 10px;
+    background-color:whitesmoke;
+    color: dimgrey; 
+} 
+
+@media only screen and (max-width:767px) {
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 5vh 5vw;
+    }
+    .techStack1 {
+        max-width: 200px;
+    }
+    .paragraphs-about {
+        text-align: center;
+    }
+}
