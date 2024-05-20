@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+  <style>
+    /* Parent container */
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-around;
+      /* justify content and align content */
+      /* flex-end, center, space around, space evenly */
+      /* flex-wrap: wrap; */
+      flex-wrap: wrap;
+      align-content: center;
+    }
+    .flex-item {
+    background-color: rgb(210, 94, 94);
+    width: 200px;
+    padding: 10px;
+    margin: 5px;
+   }
+    .main-axis {
+    position: absolute;
+    top: 50%;
+    height: 3px;
+    width: 2160px;
+    background-color: red;
+   }
+   .cross-axis {
+    position: absolute;
+    right: 50%;
+    height: 1080px;
+    width: 3px;
+    background-color: blue;
+   }
+   /* .flex1 {
+    flex-grow: 1;
+   }
+   .flex1 {
+    flex-grow: 2;
+    /* flex-shrink: 5; */
+  
+   /* flex1 {
+    flex-basis: 0;
+   } */
+
+   .flex1{
+      font-size: 50px;
+    }
+    .flex2{
+      align-self: flex-end;
+    }
+    .flex3{
+      /* alight-self: center, flex-end, flex-start, baseline; */
+      align-self: center;
+    }
+    
+    .flex4{
+      align-self: baseline;
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="flex-item flex1">Item 1</div>
+    <div class="flex-item flex2">Item 2</div>
+    <div class="flex-item flex3">Item 3</div>
+    <div class="flex-item flex4">Item 4</div>
+    <div class="axis main-axis"></div>
+      <div class="axis cross-axis"></div>
+  </div>
+</body>
+</html>
