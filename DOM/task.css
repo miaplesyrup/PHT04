@@ -1,0 +1,25 @@
+body {
+  background-color: aquamarine;
+}
+
+h1 {
+  color: blue;
+}
+
+.task-item {
+  list-style-type: none;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.delete-button {
+  float: right;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
