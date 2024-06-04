@@ -1,0 +1,25 @@
+<div id="container">
+  <h1>Set Timer</h1>
+  <input type="number" id="timeInput" min="1" max="60" placeholder="Enter time (minutes)">
+  <div id="timer">00:00</div>
+  <div id="button-container">
+      <button id="startButton">Start</button>
+      <button id="resetButton">Reset</button>
+  </div>
+</div>
+
+// timer = setInterval(() => {
+  //     if (seconds === 0 && minutes > 0) {
+  //         minutes = minutes-1;
+  //         seconds = 59;
+  //     } else {
+  //         seconds = seconds-1;
+  //     }
+  //     updateTimerDisplay();
+  //     if (minutes === 0 && seconds === 0) {
+  //         clearInterval(timer);
+  //         alert('Time is up!');
+  //         timeInput.value = '';
+  //         timer = null;
+  //     }
+  // }, 1000);

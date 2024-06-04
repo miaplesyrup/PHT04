@@ -4,6 +4,16 @@ body {
 
 h1 {
   color: blue;
+  display: flex;
+  justify-content: center;
+}
+
+.checkbox {
+  float: left;
+}
+#input-container {
+  display: flex;
+  justify-content: center;
 }
 
 .task-item {
