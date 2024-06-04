@@ -6,6 +6,7 @@ const app = express();
 app.use(express.json());
 // Routes
 app.use("/api/posts", require("./src/routes/post"));
+app.use("/api/users", require("./src/routes/user"));
 // Database
 mongoose
   .connect(process.env.MONGO_URI)
